@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Minimal fashion product landing page inspired by Zahra, built with clean HTML5, CSS, and JavaScript."
+  >
+
+  <title>Zahra — Oversized Sweatshirt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+      <button
+        class="icon-button topbar__menu"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="brand" href="#hero" aria-label="Zahra home">
+        Zahra
+      </a>
+
+      <nav class="topbar__actions" aria-label="Primary">
+        <a href="#contact">SIGN IN/UP</a>
+
+        <button
+          class="icon-button topbar__cart"
+          type="button"
+          aria-label="Open cart"
+        >
+          <span class="icon-button__dot" aria-hidden="true"></span>
+        </button>
+      </nav>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+    <div class="menu-drawer" id="site-menu" aria-hidden="true">
+      <div class="menu-drawer__panel">
+
+        <p class="menu-drawer__eyebrow">
+          Menu
+        </p>
+
+        <a href="#hero">Home</a>
+        <a href="#recommendations">Catalog</a>
+        <a href="#philosophy">About Zahra</a>
+        <a href="#contact">Contacts</a>
+
+      </div>
+    </div>
+
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+
+        <div class="hero__content">
+
+          <div class="breadcrumb">
+            Home
+            <span>•</span>
+            Catalog
+            <span>•</span>
+            Zahra — Oversized Sweatshirt
+          </div>
+
+          <p class="eyebrow">
+            CATALOG
+          </p>
+
+          <h1 class="hero__title">
+            <span class="hero__title-brand">Zahra —</span>
+            <span class="hero__title-emphasis">OVERSIZED</span>
+            <span class="hero__title-product">SWEATSHIRT</span>
+          </h1>
+
+
+          <!-- PRODUCT OPTIONS -->
+          <div class="product-meta">
+
+            <div class="meta-block">
+
+              <span class="meta-block__label">
+                01
+              </span>
+
+              <div class="size-picker" aria-label="Choose size">
+
+                <button type="button" class="size-picker__item is-active">
+                  S
+                </button>
+
+                <button type="button" class="size-picker__item">
+                  M
+                </button>
+
+                <button type="button" class="size-picker__item">
+                  L
+                </button>
+
+                <button type="button" class="size-picker__item">
+                  XL
+                </button>
+
+                <button type="button" class="size-picker__item">
+                  XXL
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <div class="meta-block">
+
+              <span class="meta-block__label">
+                02
+              </span>
+
+              <div class="color-picker" aria-label="Choose color">
+
+                <button
+                  type="button"
+                  class="color-picker__item is-active"
+                  data-color="gray"
+                >
+                  Gray
+                </button>
+
+                <button
+                  type="button"
+                  class="color-picker__item"
+                  data-color="white"
+                >
+                  White
+                </button>
+
+                <button
+                  type="button"
+                  class="color-picker__item"
+                  data-color="red"
+                >
+                  Red
+                </button>
+
+                <button
+                  type="button"
+                  class="color-picker__item"
+                  data-color="purple"
+                >
+                  Purple
+                </button>
+
+                <button
+                  type="button"
+                  class="color-picker__item"
+                  data-color="green"
+                >
+                  Green
+                </button>
+
+                <button
+                  type="button"
+                  class="color-picker__item"
+                  data-color="black"
+                >
+                  Black
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- PRICE -->
+          <div class="hero__cta-row">
+
+            <div class="price">
+              1,680 ₴
+            </div>
+
+            <button class="bag-button" type="button">
+
+              <span class="bag-button__circle" aria-hidden="true">
+                👜
+              </span>
+
+              <span>
+                BUY IN 1 CLICK
+              </span>
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO IMAGE / GALLERY -->
+        <div class="hero__visual">
+
+          <div class="hero__stats">
+
+            <div>
+              <span>Product code</span>
+              <strong>M57122</strong>
+            </div>
+
+            <div>
+              <span>Gender</span>
+              <strong>Female</strong>
+            </div>
+
+          </div>
+
+
+          <div class="gallery">
+
+            <div class="gallery__main">
+              <img
+                src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1400&q=80"
+                alt="Fashion model wearing an oversized sweatshirt"
+              >
+            </div>
+
+
+            <div class="gallery__thumbs">
+
+              <div class="gallery__thumb is-active">
+                <img
+                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+                  alt="Fashion model portrait"
+                >
+              </div>
+
+              <div class="gallery__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80"
+                  alt="Fashion model portrait"
+                >
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- GALLERY NAVIGATION -->
+          <div class="hero__pager">
+
+            <div class="dots">
+
+              <span class="dot is-active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+
+            </div>
+
+
+            <div class="pager__nav">
+
+              <button
+                type="button"
+                class="arrow-button gallery-prev"
+                aria-label="Previous item"
+              >
+                ←
+              </button>
+
+              <span class="pager__count">
+                01 / 06
+              </span>
+
+              <button
+                type="button"
+                class="arrow-button gallery-next"
+                aria-label="Next item"
+              >
+                →
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- BANNER -->
+      <section class="banner">
+
+        <p>
+          OVERSIZE SWEATSHIRT —
+          EUROPEAN <span>THREE-THREAD</span> —
+          REINFORCED CUFF
+          <span>ELASTIC</span> —
+          LIMITED NUMBER
+        </p>
+
+      </section>
+
+
+      <!-- INFORMATION -->
+      <section class="info-grid" aria-label="Product information">
+
+        <article class="info-card info-card--dark" id="shipping">
+
+          <p class="info-card__kicker">
+            SHIPPING
+          </p>
+
+          <h2>
+            Shipping is processed on business days with a predictable schedule.
+          </h2>
+
+          <p class="info-card__text">
+            Orders are delivered on business days
+            (Monday–Friday) excluding public holidays.
+          </p>
+
+          <a href="#contact">
+            SEE DETAILS
+          </a>
+
+        </article>
+
+
+        <article class="info-card info-card--image" id="faq">
+
+          <div class="info-card__copy">
+
+            <p class="info-card__kicker">
+              FAQ TOPICS
+            </p>
+
+            <h2>
+              Review the most common questions before placing an order.
+            </h2>
+
+            <p class="info-card__text">
+              You can find answers to most questions on the FAQ page.
+            </p>
+
+            <a href="#contact">
+              SEE DETAILS
+            </a>
+
+          </div>
+
+
+          <img
+            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80"
+            alt="Fashion model photo"
+          >
+
+        </article>
+
+      </section>
+
+
+      <!-- RECOMMENDATIONS -->
+      <section
+        class="recommendations"
+        id="recommendations"
+        aria-label="Recommended products"
+      >
+
+        <div class="section-heading">
+
+          <h2>
+            YOU MAY
+            <span>ALSO LIKE</span>
+          </h2>
+
+          <a class="catalog-link" href="#contact">
+
+            <span class="catalog-link__icon">
+              ↗
+            </span>
+
+            <span>
+              VIEW CATALOG
+            </span>
+
+          </a>
+
+        </div>
+
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80"
+              alt="Gray hoodie"
+              loading="lazy"
+            >
+
+            <div class="product-card__meta">
+              <span>1,380 ₴</span>
+            </div>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80"
+              alt="Dark outfit"
+              loading="lazy"
+            >
+
+            <div class="product-card__meta">
+              <span>4,960 ₴</span>
+            </div>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?auto=format&fit=crop&w=1200&q=80"
+              alt="Blue hoodie"
+              loading="lazy"
+            >
+
+            <div class="product-card__meta">
+              <span>1,680 ₴</span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- PHILOSOPHY -->
+      <section
+        class="philosophy"
+        id="philosophy"
+        aria-label="Brand philosophy"
+      >
+
+        <div class="philosophy__grid">
+
+          <div class="philosophy__left">
+
+            <p class="philosophy__eyebrow">
+              BRAND PHILOSOPHY
+            </p>
+
+            <p class="philosophy__intro">
+              With a strong focus on simple yet powerful design,
+              we are driven to create timeless work by portraying
+              an aesthetic that is uniquely our own.
+            </p>
+
+          </div>
+
+
+          <!-- FIXED IMAGE -->
+          <div class="philosophy__visual">
+
+            <img
+              src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?auto=format&fit=crop&w=1000&q=80"
+              alt="Fashion model wearing an oversized coat"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <div class="philosophy__right">
+
+            <p>
+              Zahra is from a creative world.
+            </p>
+
+          </div>
+
+
+          <h2 class="philosophy__title">
+
+            <span>
+              WE DO NOT FOLLOW
+            </span>
+
+            <span>
+              FASHION, BUT
+            </span>
+
+            <span>
+              CREATE IT FOR YOU AND
+            </span>
+
+            <span class="philosophy__title-accent">
+              YOUR SOUL
+            </span>
+
+          </h2>
+
+
+          <a class="philosophy__cta" href="#hero">
+
+            <span class="philosophy__cta-icon">
+              ↗
+            </span>
+
+            <span>
+              LEARN MORE
+            </span>
+
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+
+      <div class="footer__brand">
+        Zahra
+      </div>
+
+
+      <div class="footer__grid">
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+
+          <h3>
+            Navigation
+          </h3>
+
+          <a href="#hero">Home</a>
+          <a href="#recommendations">Catalog</a>
+          <a href="#philosophy">About Zahra</a>
+          <a href="#shipping">Shipping</a>
+          <a href="#faq">FAQ Topics</a>
+          <a href="#contact">Contacts</a>
+
+        </nav>
+
+
+        <nav class="footer__nav" aria-label="Catalog navigation">
+
+          <h3>
+            Catalog
+          </h3>
+
+          <a href="#recommendations">Hoodie</a>
+          <a href="#recommendations">T-shirt</a>
+          <a href="#recommendations">Pants</a>
+          <a href="#recommendations">Sweatshirt</a>
+          <a href="#recommendations">Longsleeve</a>
+          <a href="#recommendations">Coat</a>
+          <a href="#recommendations">View all</a>
+
+        </nav>
+
+
+        <section class="contact-card">
+
+          <h2>
+            GET
+            <span>IN TOUCH</span>
+          </h2>
+
+          <ul>
+
+            <li>
+              <span>Phone</span>
+              <strong>+38 (093) 533-67-44</strong>
+            </li>
+
+            <li>
+              <span>Email</span>
+              <strong>zahrabrand@gmail.com</strong>
+            </li>
+
+            <li>
+              <span>Address</span>
+              <strong>Kharkiv, Ukraine</strong>
+            </li>
+
+            <li>
+              <span>Socials</span>
+              <strong>Telegram · Instagram</strong>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </div>
+
+
+      <div class="footer__bottom">
+
+        <p>
+          PRIVACY POLICY
+        </p>
+
+        <p>
+          COPYRIGHT © 2026 ZAHRA
+        </p>
+
+        <p>
+          VISA · Mastercard
+        </p>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
